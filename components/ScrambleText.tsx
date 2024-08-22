@@ -3,7 +3,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-
 const CHARS = "QWERTYUIOPASDFGHJKLZXCVBNM";
 
 type ScrambleTextProps = {
@@ -12,7 +11,11 @@ type ScrambleTextProps = {
   shuffle?: number;
 };
 
-const ScrambleText = ({ children, cycle = 5, shuffle = 30 }: ScrambleTextProps) => {
+const ScrambleText = ({
+  children,
+  cycle = 5,
+  shuffle = 30,
+}: ScrambleTextProps) => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const CYCLES_PER_LETTER = cycle;
   const SHUFFLE_TIME = shuffle;
@@ -58,17 +61,18 @@ const ScrambleText = ({ children, cycle = 5, shuffle = 30 }: ScrambleTextProps) 
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
       whileInView={{ scale: 1 }}
-
       className="relative overflow-hidden -z-1"
     >
       <div className="text-4xl font-bold relative z-10 flex items-center gap-2">
         <motion.span
-          initial={{ background: 'transparent' }}
-          whileHover={{ background: 'white', color: 'black' }}
-          className="uppercase px-2 pr-8 rounded-br-xl">{text}
+          initial={{ background: "transparent" }}
+          whileHover={{ background: "white", color: "black" }}
+          className="uppercase px-2 pr-8 rounded-br-xl"
+        >
+          {text}
         </motion.span>
       </div>
-    </motion.div >
+    </motion.div>
   );
 };
 

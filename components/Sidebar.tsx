@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
@@ -8,7 +8,7 @@ const links = [
   { name: "Home", src: "#", id: 1 },
   { name: "About", src: "#", id: 2 },
   { name: "Blog", src: "#", id: 3 },
-  { name: "Contact", src: "#", id: 4 }
+  { name: "Contact", src: "#", id: 4 },
 ];
 
 const itemVariants = {
@@ -16,23 +16,23 @@ const itemVariants = {
     opacity: 0,
   },
   open: {
-    opacity: 1
-  }
+    opacity: 1,
+  },
 };
 
 const sideVariants = {
   closed: {
     transition: {
       staggerChildren: 0.1,
-      staggerDirection: -1
-    }
+      staggerDirection: -1,
+    },
   },
   open: {
     transition: {
       staggerChildren: 0.1,
-      staggerDirection: 1
-    }
-  }
+      staggerDirection: 1,
+    },
+  },
 };
 
 export default function Sidebar() {
@@ -40,7 +40,7 @@ export default function Sidebar() {
 
   const handleClick = () => {
     cycleOpen();
-  }
+  };
 
   return (
     <div>
@@ -49,11 +49,11 @@ export default function Sidebar() {
           <motion.aside
             initial={{ width: 0 }}
             animate={{
-              width: 300
+              width: 300,
             }}
             exit={{
               width: 0,
-              transition: { delay: 0.7, duration: 0.3 }
+              transition: { delay: 0.7, duration: 0.3 },
             }}
             className="w-[400px] h-screen bg-slate-900 text-white justify-center items-center"
           >
@@ -82,7 +82,9 @@ export default function Sidebar() {
         )}
       </AnimatePresence>
       <div className="btn-container">
-        <button hidden={open} onClick={handleClick}>{open ? "Close" : "Open"}</button>
+        <button hidden={open} onClick={handleClick}>
+          {open ? "Close" : "Open"}
+        </button>
       </div>
     </div>
   );
