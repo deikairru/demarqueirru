@@ -1,11 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
-import ExploreIcon from "../icons/ExploreIcon";
+import React from "react";
 const Hero = () => {
-  const [color, setColor] = useState("fff");
-
   return (
     <section className="hero h-full pb-20 md:pb-32 xl:pb-0">
       <div className="mx-[10%] xl:mx-0 xl:ml-[10%] lg:items-center flex flex-col justify-center xl:flex-row">
