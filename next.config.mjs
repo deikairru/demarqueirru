@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['i.imgur.com'],
+    remotePatterns: [
+      {
+        hostname: 'i.imgur.com',
+      }
+    ],
   },
 };
 
