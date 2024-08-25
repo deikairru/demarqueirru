@@ -1,14 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-
+import React, { useState } from "react";
+import ExploreIcon from "../icons/ExploreIcon";
 const Hero = () => {
+  const [color, setColor] = useState("fff");
+
   return (
-    <section className="hero overflow-x-hidden h-full pb-20 md:pb-32 xl:pb-0">
+    <section className="hero h-full pb-20 md:pb-32 xl:pb-0">
       <div className="mx-[10%] xl:mx-0 xl:ml-[10%] lg:items-center flex flex-col justify-center xl:flex-row">
         <div className="flex flex-col z-10 gap-4 max-w-screen-md overflow-hidden text-center xl:text-start">
-          <div className="flex">
+          <div className="max-w-fit mx-auto xl:mx-0">
             <h2 className="mt-40 xl:mt-0 text-xl md:text-3xl font-medium text-violet-sky">
               Deikairru
             </h2>
@@ -18,9 +20,8 @@ const Hero = () => {
             <span className="text-violet-sky relative">
               Developer <span className="glow-violet-sky">Developer </span>
             </span>{" "}
-            and Creative UI/UX{" "}
+            and Creative UI/UX
             <span className="text-violet-sky relative">
-              {" "}
               Designer
               <span className="glow-violet-sky">Designer </span>
             </span>
@@ -31,27 +32,24 @@ const Hero = () => {
             seamless and clean apps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center xl:justify-start">
-            <button className="border-2 border-slate-100 text-slate-100 py-2 px-6 rounded-full select-none font-md text-md">
-              <div className="flex flex-row gap-2 justify-center">
-                <Image
-                  src="/icons/explore.svg"
-                  alt="handshake icon"
-                  width={20}
-                  height={20}
-                />
-                <span>Explore Works</span>
-              </div>
+            <button className="button-white font-medium flex flex-row gap-2 justify-center items-center text-xl [&>*:first-child]:hover:animate-spin sm:hover:scale-105 sm:origin-bottom-left duration-300">
+              <Image
+                src="/icons/explore.svg"
+                alt="handshake icon"
+                width={20}
+                height={20}
+              />
+              <span>Explore Works</span>
             </button>
-            <button className="bg-violet-sky border-transparent py-2 px-6 rounded-full select-none">
-              <div className="flex flex-row gap-2 justify-center font-md text-md">
-                <Image
-                  src="/icons/handshake.svg"
-                  alt="handshake icon"
-                  width={20}
-                  height={20}
-                />
-                <span>Lets Connect</span>
-              </div>
+            <button className="button bg-violet-sky border-2 flex flex-row gap-2 justify-center items-center font-medium text-xl [&>*:first-child]:hover:animate-wiggle sm:hover:scale-105 sm:origin-bottom-right duration-300">
+              <Image
+                src="/icons/handshake.svg"
+                alt="handshake icon"
+                width={20}
+                height={20}
+                className="rotate-12"
+              />
+              <span>Lets Connect</span>
             </button>
           </div>
         </div>

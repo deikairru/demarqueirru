@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`${inter.className} antialiased bg-[#030014]`}>
+        <div className={`${inter.className} antialiased bg-[#030025]`}>
           <StarBackground />
           {children}
         </div>

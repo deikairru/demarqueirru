@@ -65,4 +65,10 @@ body {
   .glow-violet-sky {
     @apply select-none absolute bg-gradient-to-r from-violet-700 to-sky-700 blur-sm bg-clip-text text-transparent bottom-1 left-0 -z-10;
   }
+  .button {
+    @apply py-2 px-6 rounded-full select-none;
+  }
+  .button-white {
+    @apply border-2 border-slate-100 text-slate-100 button;
+  }
 }
