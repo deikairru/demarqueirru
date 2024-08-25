@@ -1,6 +1,5 @@
-import Hero from "@/components/Hero";
-import Project from "@/components/Project";
-import Sidebar from "@/components/Sidebar";
+import Hero from "@/components/sections/Hero";
+import Project from "@/components/sections/Project";
 export default function Home() {
   return (
     <main>

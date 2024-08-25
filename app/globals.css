@@ -35,11 +35,34 @@ body {
     text-wrap: balance;
   }
 
-  .text-gradient {
-    @apply bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent;
+  .bg-emerald-sky {
+    @apply bg-gradient-to-r from-emerald-400 to-sky-400;
+  }
+
+  .bg-violet-sky {
+    @apply bg-gradient-to-r from-violet-600 to-sky-500;
+  }
+
+  .text-emerald-sky {
+    @apply bg-emerald-sky bg-clip-text text-transparent;
+  }
+
+  .text-violet-sky {
+    @apply bg-violet-sky bg-clip-text text-transparent;
+  }
+
+  .border-emerald-sky {
+    @apply bg-emerald-sky bg-clip-border border-transparent;
+  }
+
+  .border-violet-sky {
+    @apply bg-violet-sky bg-clip-border border-transparent;
   }
 
   .text-slider {
     @apply whitespace-nowrap text-[12rem] uppercase opacity-5;
+  }
+  .glow-violet-sky {
+    @apply select-none absolute bg-gradient-to-r from-violet-700 to-sky-700 blur-sm bg-clip-text text-transparent bottom-1 left-0 -z-10;
   }
 }
