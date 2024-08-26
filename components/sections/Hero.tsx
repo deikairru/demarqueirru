@@ -6,7 +6,7 @@ import HandIcon from "@/components/assets/icons/handshake.svg";
 import ExploreIcon from "@/components/assets/icons/explore.svg";
 const Hero = () => {
   return (
-    <section className="hero h-screen md:h-full pb-20 md:pb-32">
+    <section className="hero h-screen md:h-full pb-20 md:pb-32 container">
       <div className="xl:mx-0 xl:ml-[10%] lg:items-center flex flex-col justify-center xl:flex-row">
         <div className="flex flex-col z-10 gap-4 max-w-screen-md overflow-hidden text-center xl:text-start">
           <div className="max-w-fit mx-auto xl:mx-0">
