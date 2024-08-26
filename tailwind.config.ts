@@ -26,6 +26,13 @@ const config: Config = {
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          md: "2rem",
+        },
+      },
     },
   },
   plugins: [],
