@@ -17,10 +17,9 @@ const Hero = () => {
             <span className="text-violet-sky relative">
               Developer <span className="glow-violet-sky">Developer </span>
             </span>{" "}
-            and Creative UI/UX
+            and Creative UI/UX{" "}
             <span className="text-violet-sky relative">
-              Designer
-              <span className="glow-violet-sky">Designer </span>
+              Designer<span className="glow-violet-sky">Designer </span>
             </span>
           </h1>
           <p className="text-slate-400 max-w-[500px] mx-auto xl:mx-0">
