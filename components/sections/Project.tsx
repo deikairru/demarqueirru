@@ -5,7 +5,7 @@ import CardProject from "../CardProject";
 
 const Project = () => {
   return (
-    <section id="project" className="py-16 mt-20">
+    <section id="project" className="pt-16 mt-20 pb-20 md:pb-32">
       <div className="container">
         <SectionHeader
           eyebrow="Masterclass Result"
