@@ -7,7 +7,7 @@ import ExploreIcon from "@/components/assets/icons/explore.svg";
 const Hero = () => {
   return (
     <section className="hero h-screen md:h-full pb-20 md:pb-32">
-      <div className="mx-[10%] xl:mx-0 xl:ml-[10%] lg:items-center flex flex-col justify-center xl:flex-row">
+      <div className="xl:mx-0 xl:ml-[10%] lg:items-center flex flex-col justify-center xl:flex-row">
         <div className="flex flex-col z-10 gap-4 max-w-screen-md overflow-hidden text-center xl:text-start">
           <div className="max-w-fit mx-auto xl:mx-0">
             <h2 className="mt-40 xl:mt-0 text-xl sm:text-2xl md:text-3xl font-medium text-violet-sky">
