@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const CardReview = () => {
   return (
-    <Card>
+    <Card className="max-w-md">
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-2">
           <div className="w-12 h-12 rounded-full bg-violet-sky"></div>
