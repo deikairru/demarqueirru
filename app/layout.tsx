@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
 import StarBackground from "@/components/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Demarqueirru",
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`${inter.className} antialiased bg-[#030025]`}>
+        <div className={`${manrope.className} antialiased bg-[#050719]`}>
           <StarBackground />
           {children}
         </div>
