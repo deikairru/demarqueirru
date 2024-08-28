@@ -4,7 +4,7 @@ import CardReview from "../CardReview";
 
 const Review = () => {
   return (
-    <section id="review" className="py-16 mt-20 pb-20 md:pb-32 container">
+    <section id="review" className="py-20 lg:py-28 md:pb-32 container">
       <SectionHeader
         eyebrow="Happy Client"
         title="What People says about me"
