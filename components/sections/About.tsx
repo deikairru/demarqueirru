@@ -81,14 +81,14 @@ const hobbies = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 lg:py-28">
+    <section id="about" className="padding-section">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
           title="A glimpse Into My World"
           desc="Learn more who i am, what i do, and what inspires me"
         />
-        <div className="mt-20 flex flex-col gap-8 max-w-5xl mx-auto">
+        <div className="margin-header flex flex-col gap-8 max-w-5xl mx-auto">
           <div className="grid grid-cols-1 gap-y-8 md:gap-x-8 md:grid-cols-5">
             <Card className="h-[320px] md:p-0 col-span-2">
               <CardHeader

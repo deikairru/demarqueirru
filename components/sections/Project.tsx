@@ -5,14 +5,14 @@ import CardProject from "../CardProject";
 
 const Project = () => {
   return (
-    <section id="project" className="py-20 lg:py-28 md:pb-32">
+    <section id="project" className="padding-section">
       <div className="container">
         <SectionHeader
           eyebrow="Masterclass Result"
           title="Featured Projects"
           desc="See how i transformed concepts into engaging and beautiful digital experience."
         />
-        <div className="flex flex-col mt-10 md:mt-20 lg:mt-32 gap-14 md:gap-20 lg:gap-28 max-w-5xl mx-auto">
+        <div className="flex flex-col margin-header gap-14 md:gap-20 lg:gap-28 max-w-5xl mx-auto">
           {dummyProjects.map((project) => (
             <CardProject
               key={project.title}

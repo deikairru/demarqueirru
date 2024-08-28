@@ -71,4 +71,12 @@ body {
   .button-white {
     @apply border-2 border-slate-100 text-slate-100 button;
   }
+
+  .margin-header {
+    @apply mt-10 md:mt-20 lg:mt-32;
+  }
+
+  .padding-section {
+    @apply py-20 md:py-28 lg:pb-32;
+  }
 }
