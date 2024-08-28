@@ -93,9 +93,9 @@ const About = () => {
             <Card className="h-[320px] md:p-0 col-span-2">
               <CardHeader
                 title="Current Reads"
-                desc="Explore the books that shaping my perspective"
+                desc="Explore the books that shaping my perspective about the world"
               />
-              <div className="w-40 mx-auto mt-6 md:mt-0">
+              <div className="w-40 mx-auto mt-6">
                 <Image src={bookImage} alt="book" />
               </div>
             </Card>
@@ -103,13 +103,13 @@ const About = () => {
             <Card className="h-[320px] p-0 col-span-3">
               <CardHeader
                 title="Tech Stack"
-                desc="Explore the technologies and tools I experienced to craft exceptional project"
-                className="px-6 py-6"
+                desc="Explore the technologies and tools I use based on my experienced when craft exceptional project"
+                className="px-6 py-6 lg:pb-4"
               />
               <ToolboxItem items={techItems} />
               <ToolboxItem
                 items={techItems}
-                className="my-6"
+                className="my-6 md:mt-4"
                 itemsWrapperClass="-translate-x-1/2"
               />
             </Card>

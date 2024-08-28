@@ -13,14 +13,14 @@ type CardAboutProps = {
 const CardHeader = ({ title, desc, className }: CardAboutProps) => {
   return (
     <div
-      className={twMerge("flex flex-col md:gap-3 md:py-8 md:px-10", className)}
+      className={twMerge("flex flex-col md:gap-3 md:pt-8 md:px-10", className)}
     >
       <div className="inline-flex items-center gap-2">
         <StarIcon className="size-9 fill-[url(#icon-violet-sky)]" />
         <IconGradient />
         <h3 className="text-2xl font-semibold">{title}</h3>
       </div>
-      <p className="text-sm md:text-base text-white/60 mt-2">{desc}</p>
+      <p className="text-sm sm:text-base text-white/60 mt-2">{desc}</p>
     </div>
   );
 };
