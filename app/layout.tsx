@@ -5,6 +5,7 @@ import "./globals.css";
 import StarBackground from "@/components/StarBackground";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import Header from "@/components/sections/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 const manrope = Manrope({ subsets: ["latin"] });
@@ -20,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body>
         <div className={`${manrope.className} antialiased bg-[#050719]`}>
           <StarBackground />
+          <Header />
           {children}
           <SpeedInsights />
           <Analytics />
