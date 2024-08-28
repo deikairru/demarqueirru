@@ -1,24 +1,32 @@
 import React from "react";
 import Card from "./Card";
 
-const CardReview = () => {
+type CardReviewProps = {
+  name: string;
+  position: string;
+  text: string;
+};
+
+const CardReview = ({ name, position, text }: CardReviewProps) => {
   return (
-    <Card className="max-w-md">
-      <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-2">
-          <div className="w-12 h-12 rounded-full bg-violet-sky"></div>
+    <Card className="max-w-xs md:max-w-md md:p-8 lg:px-10">
+      <div title={name} className="flex gap-4 items-center">
+        <div className="flex items-center gap-4">
+          <div className="size-14 rounded-full bg-violet-sky inline-flex items-center justify-center font-extrabold text-2xl">
+            {name[0]}
+          </div>
           <div className="flex flex-col">
-            <span className="font-medium text-lg">John Doe</span>
-            <span className="text-sm text-slate-400">CEO at Company</span>
+            <span className="font-semibold"> {name}</span>
+            <span className="text-sm text-white/40">{position}</span>
           </div>
         </div>
-        <p className="text-slate-400 line-clamp-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
-          diam id bibendum lobortis, turpis sapien eleifend odio, quis dictum
-          libero velit vitae sem. Sed consectetur, diam id bibendum lobortis,
-          turpis sapien eleifend odio, quis dictum libero velit vitae sem.
-        </p>
       </div>
+      <p
+        title={text}
+        className="text-sm md:text-base mt-4 md:mt-6 text-white/60 line-clamp-4"
+      >
+        {text}
+      </p>
     </Card>
   );
 };
