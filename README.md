@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/-TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript"/>
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="three.js"/>
-    <img src="https://img.shields.io/badge/Preview-black?style=for-the-badge&logo=react&logoColor=react&label=Full%20Version" alt="preview"/>
+    <a href="https://deika.my.id" target="_blank"><img src="https://img.shields.io/badge/Preview-black?style=for-the-badge&logo=react&logoColor=react&label=Full%20Version" alt="preview"/></a>
 
   </div>
 
