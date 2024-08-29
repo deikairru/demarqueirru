@@ -19,7 +19,7 @@ const Hero = () => {
                 <Logo className="size-24 xl:size-12" />
               </div>
               <h2 className="xl:mt-4 text-xl sm:text-2xl md:text-4xl font-medium text-violet-sky">
-                Deikairru
+                De Marque
               </h2>
             </div>
           </div>
