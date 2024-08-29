@@ -14,3 +14,10 @@
 - Featured Review section for client review
 - Featured About section for developer info
 - Featured Contact section for developer contact
+
+## v2.0.0 - Completed
+
+### Feature
+
+- Header navigation
+- Add Logo
