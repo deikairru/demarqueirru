@@ -74,7 +74,7 @@ const Header = () => {
             <a
               href={link.src}
               key={link.title}
-              className={`px-5 py-2 rounded-full text-sm font-extrabold transition-all duration-300 ${
+              className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
                 activeSection === link.src.substring(1)
                   ? "bg-violet-sky text-gray-900 hover:bg-white/30"
                   : "text-white/70 hover:bg-white/10 hover:text-white"

@@ -4,18 +4,24 @@ import React from "react";
 import HeroImage from "@/components/assets/icons/heroIcon.svg";
 import HandIcon from "@/components/assets/icons/handshake.svg";
 import ExploreIcon from "@/components/assets/icons/explore.svg";
+import Logo from "@/components/assets/icons/logo.svg";
 const Hero = () => {
   return (
     <section
       id="hero"
       className="hero h-screen md:h-full pb-20 md:pb-32 container"
     >
-      <div className="xl:mx-0 xl:ml-[10%] lg:items-center flex flex-col justify-center xl:flex-row">
-        <div className="flex flex-col z-10 gap-4 max-w-screen-md overflow-hidden text-center xl:text-start">
+      <div className="xl:mx-0 xl:ml-[10%] flex flex-col justify-center xl:flex-row">
+        <div className="flex flex-col z-10 gap-4 max-w-screen-md overflow-hidden text-center xl:text-start mx-auto">
           <div className="max-w-fit mx-auto xl:mx-0">
-            <h2 className="mt-40 xl:mt-0 text-xl sm:text-2xl md:text-3xl font-medium text-violet-sky">
-              Deikairru
-            </h2>
+            <div className="flex flex-col xl:flex-row gap-2 items-center mt-24 xl:mt-32">
+              <div className="inline-flex items-center justify-center">
+                <Logo className="size-24 xl:size-12" />
+              </div>
+              <h2 className="xl:mt-4 text-xl sm:text-2xl md:text-4xl font-medium text-violet-sky">
+                Deikairru
+              </h2>
+            </div>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold md:max-w-screen-md leading-slug">
             Passionate Frontend{" "}
