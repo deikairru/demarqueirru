@@ -27,7 +27,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
-        <div className={`${manrope.className} antialiased bg-[#050719]`}>
+        <div
+          className={`${manrope.className} antialiased bg-[#050719] text-white`}
+        >
           <StarBackground />
           <Header />
           {children}
